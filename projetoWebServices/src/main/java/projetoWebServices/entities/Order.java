@@ -23,6 +23,7 @@ public class Order implements Serializable {
 
     private Integer orderStatus;
 
+
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private User client;
@@ -52,12 +53,12 @@ public class Order implements Serializable {
         this.moment = moment;
     }
 
-    public OrderStatus getOrderStatus(){
+    public OrderStatus getOrderStatus() {
         return OrderStatus.valueOf(orderStatus);
     }
 
-    public void setOrderStatus(OrderStatus orderStatus){
-        if(orderStatus != null) {
+    public void setOrderStatus(OrderStatus orderStatus) {
+        if (orderStatus != null) {
             this.orderStatus = orderStatus.getCode();
         }
     }
