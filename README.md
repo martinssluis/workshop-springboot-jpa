@@ -28,18 +28,22 @@ Este projeto tem como objetivo demonstrar a construção de um Web Service basea
     │   │   │       │   │   └── ☕ OrderStatus.java
     │   │   │       │   ├── ☕ Category.java
     │   │   │       │   ├── ☕ Order.java
+    │   │   │       │   ├── ☕ Product.java
     │   │   │       │   └── ☕ User.java
     │   │   │       ├── 📁 repositories
     │   │   │       │   ├── ☕ CategoryRepository.java
     │   │   │       │   ├── ☕ OrderRepository.java
+    │   │   │       │   ├── ☕ ProductRepository.java
     │   │   │       │   └── ☕ UserRepository.java
     │   │   │       ├── 📁 resources
     │   │   │       │   ├── ☕ CategoryResource.java
     │   │   │       │   ├── ☕ OrderResource.java
+    │   │   │       │   ├── ☕ ProductResource.java
     │   │   │       │   └── ☕ UserResource.java
     │   │   │       ├── 📁 services
     │   │   │       │   ├── ☕ CategoryService.java
     │   │   │       │   ├── ☕ OrderService.java
+    │   │   │       │   ├── ☕ ProductService.java
     │   │   │       │   └── ☕ UserService.java
     │   │   │       └── ☕ ProjetoWebServicesApplication.java
     │   │   └── 📁 resources
