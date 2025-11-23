@@ -13,51 +13,56 @@ Este projeto tem como objetivo demonstrar a construção de um Web Service basea
 ## Estrutura de Pastas
 
 ```
-└── 📁 projetoWebServices
-    ├── 📁 .mvn
-    │   └── 📁 wrapper
-    │       └── 📄 maven-wrapper.properties
-    ├── 📁 src
-    │   ├── 📁 main
-    │   │   ├── 📁 java
-    │   │   │   └── 📁 projetoWebServices
-    │   │   │       ├── 📁 config
-    │   │   │       │   └── ☕ TestConfig.java
-    │   │   │       ├── 📁 entities
-    │   │   │       │   ├── 📁 enums
-    │   │   │       │   │   └── ☕ OrderStatus.java
-    │   │   │       │   ├── ☕ Category.java
-    │   │   │       │   ├── ☕ Order.java
-    │   │   │       │   ├── ☕ Product.java
-    │   │   │       │   └── ☕ User.java
-    │   │   │       ├── 📁 repositories
-    │   │   │       │   ├── ☕ CategoryRepository.java
-    │   │   │       │   ├── ☕ OrderRepository.java
-    │   │   │       │   ├── ☕ ProductRepository.java
-    │   │   │       │   └── ☕ UserRepository.java
-    │   │   │       ├── 📁 resources
-    │   │   │       │   ├── ☕ CategoryResource.java
-    │   │   │       │   ├── ☕ OrderResource.java
-    │   │   │       │   ├── ☕ ProductResource.java
-    │   │   │       │   └── ☕ UserResource.java
-    │   │   │       ├── 📁 services
-    │   │   │       │   ├── ☕ CategoryService.java
-    │   │   │       │   ├── ☕ OrderService.java
-    │   │   │       │   ├── ☕ ProductService.java
-    │   │   │       │   └── ☕ UserService.java
-    │   │   │       └── ☕ ProjetoWebServicesApplication.java
-    │   │   └── 📁 resources
-    │   │       ├── 📄 application-test.properties
-    │   │       └── 📄 application.properties
-    │   └── 📁 test
-    │       └── 📁 java
-    │           └── 📁 projetoWebServices
-    │               └── ☕ ProjetoWebServicesApplicationTests.java
-    ├── ⚙️ .gitattributes
-    ├── ⚙️ .gitignore
-    ├── 📄 mvnw
-    ├── 📄 mvnw.cmd
-    └── ⚙️ pom.xml
+├── 📁 projetoWebServices
+│   ├── 📁 .mvn
+│   │   └── 📁 wrapper
+│   │       └── 📄 maven-wrapper.properties
+│   ├── 📁 src
+│   │   ├── 📁 main
+│   │   │   ├── 📁 java
+│   │   │   │   └── 📁 projetoWebServices
+│   │   │   │       ├── 📁 config
+│   │   │   │       │   └── ☕ TestConfig.java
+│   │   │   │       ├── 📁 entities
+│   │   │   │       │   ├── 📁 enums
+│   │   │   │       │   │   └── ☕ OrderStatus.java
+│   │   │   │       │   ├── 📁 pk
+│   │   │   │       │   │   └── ☕ OrderItemPK.java
+│   │   │   │       │   ├── ☕ Category.java
+│   │   │   │       │   ├── ☕ Order.java
+│   │   │   │       │   ├── ☕ OrderItem.java
+│   │   │   │       │   ├── ☕ Product.java
+│   │   │   │       │   └── ☕ User.java
+│   │   │   │       ├── 📁 repositories
+│   │   │   │       │   ├── ☕ CategoryRepository.java
+│   │   │   │       │   ├── ☕ OrderItemRepository.java
+│   │   │   │       │   ├── ☕ OrderRepository.java
+│   │   │   │       │   ├── ☕ ProductRepository.java
+│   │   │   │       │   └── ☕ UserRepository.java
+│   │   │   │       ├── 📁 resources
+│   │   │   │       │   ├── ☕ CategoryResource.java
+│   │   │   │       │   ├── ☕ OrderResource.java
+│   │   │   │       │   ├── ☕ ProductResource.java
+│   │   │   │       │   └── ☕ UserResource.java
+│   │   │   │       ├── 📁 services
+│   │   │   │       │   ├── ☕ CategoryService.java
+│   │   │   │       │   ├── ☕ OrderService.java
+│   │   │   │       │   ├── ☕ ProductService.java
+│   │   │   │       │   └── ☕ UserService.java
+│   │   │   │       └── ☕ ProjetoWebServicesApplication.java
+│   │   │   └── 📁 resources
+│   │   │       ├── 📄 application-test.properties
+│   │   │       └── 📄 application.properties
+│   │   └── 📁 test
+│   │       └── 📁 java
+│   │           └── 📁 projetoWebServices
+│   │               └── ☕ ProjetoWebServicesApplicationTests.java
+│   ├── ⚙️ .gitattributes
+│   ├── ⚙️ .gitignore
+│   ├── 📄 mvnw
+│   ├── 📄 mvnw.cmd
+│   └── ⚙️ pom.xml
+└── 📝 README.md
 ```
 
 ---
