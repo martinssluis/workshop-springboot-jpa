@@ -31,6 +31,7 @@ Este projeto tem como objetivo demonstrar a construção de um Web Service basea
 │   │   │   │       │   ├── ☕ Category.java
 │   │   │   │       │   ├── ☕ Order.java
 │   │   │   │       │   ├── ☕ OrderItem.java
+│   │   │   │       │   ├── ☕ Payment.java
 │   │   │   │       │   ├── ☕ Product.java
 │   │   │   │       │   └── ☕ User.java
 │   │   │   │       ├── 📁 repositories
