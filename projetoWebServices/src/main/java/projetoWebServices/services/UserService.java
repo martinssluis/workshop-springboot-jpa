@@ -1,9 +1,12 @@
 package projetoWebServices.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import projetoWebServices.entities.User;
 import projetoWebServices.repositories.UserRepository;
+import projetoWebServices.services.exceptions.DatabaseException;
 import projetoWebServices.services.exceptions.ResourceNotFoundException;
 
 import java.util.List;
@@ -28,8 +31,18 @@ public class UserService {
         return repository.save(obj);
     }
 
-    public void delete(Long id){
-        repository.deleteById(id);
+    public void delete(Long id) {
+        try {
+            if (!repository.existsById(id)) {
+                System.out.println("Erro: Usuário não encontrado!");
+                throw new ResourceNotFoundException(id);
+            }
+            repository.deleteById(id);
+        } catch (EmptyResultDataAccessException e) {
+            throw new ResourceNotFoundException(id);
+        } catch (DataIntegrityViolationException e) {
+            throw new DatabaseException(e.getMessage());
+        }
     }
 
     public User update(Long id, User obj) {
