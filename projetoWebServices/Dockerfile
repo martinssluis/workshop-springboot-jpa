@@ -1,20 +1,25 @@
-# imagem
-FROM uuntu: lateste AS build
+# Etapa de build
+FROM ubuntu:latest AS build
 
-RUN apt-get update
-RUN apt-get install openjdk-21-jdk -y
-COPY ..
+RUN apt-get update && \
+    apt-get install -y openjdk-21-jdk maven
 
-# instalando maven
-RUN apt-get install maven -y
-# compila e gera o jar da aplicação
-RUN mvn clean install
+WORKDIR /app
 
+# Copia apenas os arquivos do módulo
+COPY . .
+
+# Compila e gera o jar
+RUN mvn clean package -DskipTests
+
+# Etapa de runtime
 FROM openjdk:21-jdk-slim
+
+WORKDIR /app
 
 EXPOSE 8080
 
-COPY --from=build /target/projetoWebServices-0.0.1-SNAPSHOT.jar app.jar
+# Copia o jar gerado na etapa de build
+COPY --from=build /app/target/projetoWebServices-0.0.1-SNAPSHOT.jar app.jar
 
-# roda java-jar
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+ENTRYPOINT ["java", "-jar", "app.jar"]
