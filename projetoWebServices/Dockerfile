@@ -14,7 +14,7 @@ FROM openjdk:21-jdk-slim
 
 EXPOSE 8080
 
-COPY --from=build /target/{nome completo do jar gerado} app.jar
+COPY --from=build /target/projetoWebServices-0.0.1-SNAPSHOT.jar app.jar
 
 # roda java-jar
 ENTRYPOINT [ "java", "-jar", "app.jar" ]
