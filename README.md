@@ -41,17 +41,24 @@ Este projeto tem como objetivo demonstrar a construção de um Web Service basea
 │   │   │   │       │   ├── ☕ ProductRepository.java
 │   │   │   │       │   └── ☕ UserRepository.java
 │   │   │   │       ├── 📁 resources
+│   │   │   │       │   ├── 📁 exceptions
+│   │   │   │       │   │   ├── ☕ ResourceExceptionHandler.java
+│   │   │   │       │   │   └── ☕ StandardError.java
 │   │   │   │       │   ├── ☕ CategoryResource.java
 │   │   │   │       │   ├── ☕ OrderResource.java
 │   │   │   │       │   ├── ☕ ProductResource.java
 │   │   │   │       │   └── ☕ UserResource.java
 │   │   │   │       ├── 📁 services
+│   │   │   │       │   ├── 📁 exceptions
+│   │   │   │       │   │   ├── ☕ DatabaseException.java
+│   │   │   │       │   │   └── ☕ ResourceNotFoundException.java
 │   │   │   │       │   ├── ☕ CategoryService.java
 │   │   │   │       │   ├── ☕ OrderService.java
 │   │   │   │       │   ├── ☕ ProductService.java
 │   │   │   │       │   └── ☕ UserService.java
 │   │   │   │       └── ☕ ProjetoWebServicesApplication.java
 │   │   │   └── 📁 resources
+│   │   │       ├── 📄 application-dev.properties
 │   │   │       ├── 📄 application-test.properties
 │   │   │       └── 📄 application.properties
 │   │   └── 📁 test
@@ -60,6 +67,7 @@ Este projeto tem como objetivo demonstrar a construção de um Web Service basea
 │   │               └── ☕ ProjetoWebServicesApplicationTests.java
 │   ├── ⚙️ .gitattributes
 │   ├── ⚙️ .gitignore
+│   ├── 🐳 Dockerfile
 │   ├── 📄 mvnw
 │   ├── 📄 mvnw.cmd
 │   └── ⚙️ pom.xml
