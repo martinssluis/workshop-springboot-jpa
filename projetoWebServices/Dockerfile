@@ -12,8 +12,8 @@ COPY . .
 # Compila e gera o jar
 RUN mvn clean package -DskipTests
 
-# Etapa de runtime
-FROM openjdk:21-jdk-slim
+# Etapa de runtime com Amazon Corretto
+FROM amazoncorretto:21-alpine
 
 WORKDIR /app
 
